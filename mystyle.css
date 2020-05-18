@@ -4,11 +4,14 @@
 	box-sizing: border-box;
 }
 
+html {
+	background: url(./media/logo.png) no-repeat center center fixed;
+}
+
 header {
 	display: flex;
 	width: 30%;
 	margin: auto;
-	flex: 1;
 }
 
 
