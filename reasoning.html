@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<link rel="shortcut icon" type="image/x-icon" href="./media/favicon.png">
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="./mystyle.css">
+			<title>LoR Fanpage</title>
+		</head>
+		<body>
+
+			<header>
+				<a href="./index.html">
+					<img src="./media/logo.png" alt="logo" style="width: 15%" class="top_left">
+				</a>
+			</header>
+
+			<h1>Why I chose LoR</h1>
+
+			<br>
+			<br>
+			<br>
+
+			<div style="text-align:center"> 
+				<video id="video1" width="420">
+					<source src="./media/video.mp4" type="video/mp4">
+			    	Your browser doesn't support the video tag but you can watch it <a href="https://www.youtube.com/watch?v=TNhKAJwlj04">here</a> if you want to.
+				</video>
+				<br>
+				<button onclick="playPause()">Play/Pause</button>
+				<button onclick="makeBig()">Big</button>
+				<button onclick="makeNormal()">Normal</button>
+			</div>
+
+			<script>
+				var myVideo = document.getElementById("video1");
+
+				function playPause() {
+					if (myVideo.paused)
+						myVideo.play();
+					else
+						myVideo.pause();
+				}
+
+				function makeBig() {
+					myVideo.width = 720;
+				}
+
+				function makeNormal() {
+					myVideo.width = 420;
+				}
+				</script> 
+
+			<p>Reasons</p>
+
+			<footer>
+				<br>
+				<br>
+				Back <a href="./index.html">home</a>
+			</footer>
+
+		</body>
+	</html>
