@@ -1,36 +1,64 @@
 <!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<link rel="shortcut icon" type="image/x-icon" href="./media/favicon.png">
-			<meta charset="utf-8" />
-			<link rel="stylesheet" href="./mystyle.css">
-			<title>LoR Fanpage</title>
-		</head>
-		<body>
+<html lang="en">
 
-			<header>
-				<a href="https://playruneterra.com/en-us/" target="_blank">
-					<img src="./media/logo.png" alt="logo" style="width: 50%" class="center">
-				</a>
-			</header>
+<head>
+  <meta charset="utf-8">
 
-			<h1>Overview</h1>
+  <title>Lab 04 PWA</title>
 
-			<p>Please let me start this by saying:</p>
-			<br>
-			<br>
-			<h2>Welcome on my website!</h2>
-			<br>
-			<br>
-			<p>This is a place where I just wanted to share my newly discovered interest in Legends of Runeterra.</p>
-			<p>If you want to know more about this fairly new card game then feel free to head over to <a href="./getting-started.html">this page</a> where I explain what it's all about.</p>
-			<br>
-			<p>But if you're curious as to why I chose this particular topic click over <a href="./reasoning.html">here</a>.</p>
+  <!-- Manifest and Styles -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
 
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-		</body>
-	</html>
+  <!-- App Name -->
+  <meta name="application-name" content="Lab 04 PWA" />
+  <meta name="apple-mobile-web-app-title" content="Lab 04 PWA" />
+
+  <!-- Capability -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- Starting URL -->
+  <meta name="msapplication-starturl" content="/index.html" />
+
+  <!-- Theme/Display -->
+  <meta name="theme-color" content="white"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  <!-- Icon for iOS 180x180 -->
+  <link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
+
+  <!-- Splash Screens for iOS -->
+  <link href="img/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+  <link href="img/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+  <link href="img/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+  <link href="img/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+  <link href="img/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+  <link href="img/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
+  <link href="img/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
+
+</head>
+
+<body class="fullscreen">
+<div class="container">
+  <h1 class="title">Welcome to Lab 04 PWA!</h1>
+
+  <!-- Web Worker  -->
+  <h2>Web Worker</h2>
+  <button onclick="sendMessageToWebworker()">Post message 'hello'.</button>
+  <button onclick="askWebworkerForRecurringTask()">Post message 'recurring task'.</button>
+  <output class="webworker"></output>
+
+  <!-- Service Worker -->
+  <h2>Service Worker</h2>
+  <output class="serviceworker"></output>
+</div>
+
+<!-- Scripts -->
+<script src="js/use_webworker.js"></script>
+<script src="js/use_serviceworker.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
+
