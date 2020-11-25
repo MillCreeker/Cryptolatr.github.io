@@ -6,10 +6,10 @@ if ("serviceWorker" in navigator) {
         navigator.serviceWorker
             .register("../serviceworker.js")
             .then(serviceWorker => {
-                console.log("Service Worker Lab 04 PWA registered: ", serviceWorker);
+                console.log("Service Worker Cryptolatr registered: ", serviceWorker);
             })
             .catch(error => {
-                console.error("Error registering the Service Worker  Lab 04 PWA: ", error);
+                console.error("Error registering the Service Worker Cryptolatr: ", error);
             });
     });
 }
