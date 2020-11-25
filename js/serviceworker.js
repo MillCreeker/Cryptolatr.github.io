@@ -1,7 +1,7 @@
 /******************
  * SERVICE WORKER *
  ******************/
-var cacheName = 'lab04pwa-cache';
+var cacheName = 'cryptolatr-cache';
 var filesToCache = [
   '../img/apple_splash_640.png',
   '../img/apple_splash_750.png',
