@@ -1,7 +1,7 @@
 /********************
  * USE A WEB WORKER *
  ********************/
-const worker = new Worker("webworker.js");
+const worker = new Worker("js/webworker.js");
 
 function sendMessageToWebworker() {
   worker.postMessage("hello");
