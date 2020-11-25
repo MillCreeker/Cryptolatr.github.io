@@ -17,10 +17,10 @@ var filesToCache = [
   '../img/lab04pwa144.png',
   '../index.html',
   '../css/style.css',
-  'js/use_webworker.js',
-  'js/use_serviceworker.js',
-  'js/webworker.js',
-  'js/main.js'
+  './js/use_webworker.js',
+  './js/use_serviceworker.js',
+  './js/webworker.js',
+  './js/main.js'
 ];
 
 self.addEventListener("install", event => {
