@@ -7,9 +7,6 @@ body {
 /* Make content area fill the entire browser window */
 html, .fullscreen {
   display: flex;
-  height: 100%;
-  margin: 0;
-  padding: 0;
   width: 100%;
 }
 
