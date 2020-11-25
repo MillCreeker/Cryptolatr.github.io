@@ -19,3 +19,7 @@ html, .fullscreen {
 .title {
   font-size: 3rem;
 }
+
+textarea{
+    resize: none;
+}
