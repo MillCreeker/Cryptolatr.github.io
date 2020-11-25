@@ -1,7 +1,7 @@
 {
-  "name": "Cryptolatr",
-  "short_name": "Crptltr",
-  "description": "Encrypts your messages offline for maximum security",
+  "name": "Lab 04 PWA",
+  "short_name": "Lab04PWA",
+  "description": "Basic PWA for MSD students!",
   "lang": "en-US",
   "start_url": "index.html",
   "display": "standalone",

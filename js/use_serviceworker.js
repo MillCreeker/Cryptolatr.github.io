@@ -4,12 +4,12 @@
 if ("serviceWorker" in navigator) {
     window.addEventListener('load', function() {
         navigator.serviceWorker
-            .register("../serviceworker.js")
+            .register("js/serviceworker.js")
             .then(serviceWorker => {
-                console.log("Service Worker Cryptolatr registered: ", serviceWorker);
+                console.log("Service Worker Lab 04 PWA registered: ", serviceWorker);
             })
             .catch(error => {
-                console.error("Error registering the Service Worker Cryptolatr: ", error);
+                console.error("Error registering the Service Worker  Lab 04 PWA: ", error);
             });
     });
 }
