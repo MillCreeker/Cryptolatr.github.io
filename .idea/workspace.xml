@@ -115,6 +115,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="AVDManager" timestamp="1604402537294">
