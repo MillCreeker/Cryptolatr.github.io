@@ -36,23 +36,64 @@
   <link href="img/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
   <link href="img/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
   <link href="img/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
-
 </head>
 
-<body class="fullscreen">
+<body>
+<!--Sidebar-->
+<div class="sidebar" id="menu_sidebar">
+<h2 class="menu_caption">Seeds <img src="img/back_arrow.svg" class="back_menu" onclick="menu_close()" alt="Menu" width="13%"></h2>
+<br>
 
-  <h2>Code</h2>
-  <br>
-  <textarea id="code" name="code" rows="1" cols="1"></textarea>
-  <br>
-  <a href="encryption.html">Encrypt</a>
-  <br>
-  <a href="#">Lupe aktivieren</a>
+  <table class="seed_table">
+    <tr>
+      <td>
+        <p onclick="fill_in_seed('Seed 1')">Seed 1</p>
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p onclick="fill_in_seed('Seed 2')">Seed 2</p>
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p onclick="fill_in_seed('Seed 3')">Seed 3</p>
+        <hr>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!--Page Content-->
+  <div class="content">
+    <img src="img/menu.svg" onclick="menu_open()" alt="Menu" width="13%">
+    <br>
+    <br>
+
+    <h3 class="content_caption">Seed</h3>
+
+    <div class="center">
+    <textarea id="seed_text" class="seed_text" name="seed" rows="1" cols="25"></textarea>
+    <br>
+    <br>
+
+    <img src="img/envelope.svg" onclick="save_seed_encrypt()" alt="Encrypt" width="22%">
+    <br>
+    <br>
+
+    <p class="magnifier_text" onclick="save_seed_decrypt()"><img src="img/magnifying_glass.png" class="magnifier_img" alt="Decrypt" width="10%">Lupe aktivieren</p>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/use_webworker.js"></script>
   <script src="js/use_serviceworker.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/menu_bar.js"></script>
+  <script src="js/encryption.js"></script>
+  <script src="js/decryption.js"></script>
 
 </body>
 

@@ -2,24 +2,64 @@
 
 body {
   font-family: sans-serif;
-}
-
-/* Make content area fill the entire browser window */
-html, .fullscreen {
-  display: flex;
   width: 100%;
 }
 
-/* Center the content in the browser window */
-.container {
-  margin: auto;
+hr{
+  border: 0.5px solid black;
+  margin-bottom: 0;
+}
+
+.seed_text{
+    width: 70%;
+    resize: none;
+    background-color: lightgray;
+    font-size: 6vw;
+}
+
+.content_caption{
+  font-size: 7vw;
+  font-weight: normal;
+  margin-left: 24%;
+  margin-bottom: 0px;
+}
+
+.magnifier_text{
+  font-size: 6vw;
+}
+
+.center{
   text-align: center;
 }
 
-.title {
-  font-size: 3rem;
+.magnifier_img{
+  vertical-align: middle;
 }
 
-textarea{
-    resize: none;
+.sidebar{
+  width: 48%;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  height: 100%;
+  margin: 0px;
+  display: none;
+  box-shadow: 100px 0 500px -2px grey;
+}
+
+.menu_caption{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 7vw;
+  font-weight: normal; 
+}
+
+.back_menu{
+  margin-top: 10px;
+  margin-right: 20px;
+  float: right;
+}
+
+.seed_table{
+  font-size: 6vw;
 }
