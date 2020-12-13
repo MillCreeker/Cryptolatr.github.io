@@ -1,12 +1,15 @@
 # MSD Mobile Platforms #
-## Lab 04 Teil 1: PWAs ##
-by Mathias Knoll
+## Cryptolat ##
+by Jan Mühlbacher, Anna-Caterina Amann
 
-### Ein Manifest verfassen ###
+### About ###
+Cryptolatr is an app designed to encrypt your data securely on your device.
+It functions completely offline and independent of third applications; making it especially secure.
 
-Ein Dokument in der Javascript Object Notation (JSON) welches die WebApp(PWA) beschreibt.
+### Github Repository ###
 
-* Datei: manifest.json
-* [Referenz](https://w3c.github.io/manifest/) 
-* [Tutorial](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+[Repo](https://github.com/MillCreeker/MillCreeker.github.io) 
 
+### Link to Website ###
+
+[PWA](https://millcreeker.github.io/)
