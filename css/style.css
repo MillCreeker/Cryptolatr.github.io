@@ -75,18 +75,17 @@ button{
   border: none;
   margin-left: 5%;
 }
-.encryptBtn{
+.encryptBtn, .decryptBtn{
   border-radius: 10px;
   font-size: 4vw;
   background-color: lightgray;
   border: none;
   margin-left: 80%;
 }
-.textEncr{
+.textEncr, .textDecr{
   width: 70%;
   background-color: lightgray;
-  font-size: 6vw;
+  font-size: 4vw;
   border-radius: 20px;
   margin-left: 15%;
-
 }

@@ -23,6 +23,5 @@ function encryptcopy(message = '', key = ''){
     document.execCommand("copy");
     return messStr;
 }
-
 // Um mit seed arbeiten zu können, einfach folgende Zeile am Anfang der ersten Funktion einbauen:
 // seed = localStorage.getItem("seedKey");

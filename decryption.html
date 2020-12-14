@@ -25,13 +25,22 @@
     <!-- Icon for iOS 180x180 -->
     <link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
 </head>
 
 <body class="fullscreen">
 
     <script src="js/use_webworker.js"></script>
     <script src="js/decryption.js"></script>
-    
+
+    <button onclick="location.href='index.html'" type="button">Back</button>
+    <br>
+    <br>
+    <textarea id="textDecr" class="textDecr" rows="6" cols="80"></textarea>
+    <br>
+    <br>
+    <button class="decryptBtn" onclick="decrypt('textDecr', seed)">Decrypt</button>
+
 </body>
 
 </html>
