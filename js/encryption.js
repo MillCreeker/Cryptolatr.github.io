@@ -10,9 +10,11 @@ function save_seed_encrypt(){
     localStorage.setItem("seedKey", seed);
     window.open("encryption.html","_self");
 }
+
 function goBack() {
   window.history.back();
 }
+
 function encryptcopy(message = '', key = ''){
     var message = CryptoJS.AES.encrypt(message, key);
     var messStr = message.toString();
@@ -23,5 +25,3 @@ function encryptcopy(message = '', key = ''){
     document.execCommand("copy");
     return messStr;
 }
-// Um mit seed arbeiten zu können, einfach folgende Zeile am Anfang der ersten Funktion einbauen:
-// seed = localStorage.getItem("seedKey");

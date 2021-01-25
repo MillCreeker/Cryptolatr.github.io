@@ -71,7 +71,6 @@ hr{
 button{
   border-radius: 10px;
   font-size: 4vw;
-  background-color: lightgray;
   border: none;
   margin-left: 5%;
 }
@@ -82,10 +81,22 @@ button{
   border: none;
   margin-left: 80%;
 }
+.encryptImg, .decryptImg{
+  height: 8vw;
+}
 .textEncr, .textDecr{
   width: 70%;
   background-color: lightgray;
-  font-size: 4vw;
+  font-size: 5vw;
+  font-weight: bold;
   border-radius: 20px;
   margin-left: 15%;
+  resize: vertical;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.backArrow{
+  height: 5vw;
+  margin-top: 10px;
 }

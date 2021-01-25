@@ -33,13 +33,17 @@
     <script src="js/use_webworker.js"></script>
     <script src="js/encryption.js"></script>
 
-    <button onclick="location.href='index.html'" type="button">Back</button>
+    <button onclick="location.href='index.html'" type="button" style="background-color: transparent">
+        <img src="img/back_arrow.svg" class="backArrow"></img>
+    </button>
     <br>
     <br>
     <textarea id="textEncr" class="textEncr" rows="6" cols="80"></textarea>
     <br>
     <br>
-    <button class="encryptBtn" onclick="encryptcopy('textEncr', seed)">Encrypt</button>
+    <button class="encryptBtn" onclick="encryptcopy('textEncr', seed)">
+        <img src="img/lock_closed.svg" class="encryptImg"></img>
+    </button>
 
 </body>
 

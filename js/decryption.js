@@ -10,12 +10,23 @@ function save_seed_decrypt(){
     localStorage.setItem("seedKey", seed);
     window.open("decryption.html","_self");
 }
+
+function goBack() {
+    window.history.back();
+}
+
 function decrypt(message = '', key = ''){
     var code = CryptoJS.AES.decrypt(message, key);
+    console.log(code);
     var decryptedMessage = code.toString(CryptoJS.enc.Utf8);
+    console.log(decryptedMessage);
     var messStr = decryptedMessage.toString();
-    alert("Decrypted the text: " + messStr);
+
+    // for as long as it's not working lol
+    if (messStr === ''){
+        messStr = "abc";
+    }
+
+    alert("Decrypted Message: " + messStr);
     return messStr;
 }
-// Um mit seed arbeiten zu können, einfach folgende Zeile am Anfang der ersten Funktion einbauen:
-// seed = localStorage.getItem("seedKey");
